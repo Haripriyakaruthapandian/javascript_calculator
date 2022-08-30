@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <style>
+            body{
+                background-color: beige;
+            }
+            table{
+                background-color: aqua;
+                width: 50%;
+                height:4cm;
+                align-items: center;
+                height:200px;
+                position: absolute;
+                top:13%;
+                left: 5%;
+                font-size: large;
+                
+            }
+            input[type="text"]{
+                width: 90%;
+                height:70px;
+                border-radius: 10px;
+            }
+            .sp{
+                padding-left: 5px;
+                padding-top: 45px;
+            }
+            input[type="button"]{
+                width:60%;
+                border-radius: 10px;
+            }
+            .cal{
+                height:300px;
+                width:50%;
+                position: absolute;
+                top:10%;
+                left: 25%;
+                background-color: rgb(78, 159, 222);
+                border-radius: 10px;
+            }
+            .borderless tr td {
+    border: none !important;
+    padding-top: 3px !important;
+    padding-left: 1px !important;
+    
+}
+footer{
+            background-color: #131a22;
+            height: 50px;
+            font-weight: bold;
+            color:white;
+            position: absolute;
+            top:80%;
+            width:100%;
+        }
+        
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    </head>
+<body>
+<center><h1>Javascript Calculator</h1></center>
+    <div class="container">
+    <div class="cal">
+        <form name="calculator">
+        <table class="table borderless">
+            <tr><td colspan="4"><input type="text" name="ans"></td></tr><tr></tr>
+            <tr class="borderless"><td colspan="1"><span class="sp"><input type="button" value="7" class="btn btn-primary" onclick="document.calculator.ans.value+='7'">
+                </span></td>
+               <td><span class="sp"><input type="button" value="8"  class="btn btn-primary" onclick="document.calculator.ans.value+='8'">
+                </span></td>
+               <td><span class="sp"><input type="button" value="9"  class="btn btn-primary" onclick="document.calculator.ans.value+='9'">
+                </span></td>
+
+                <td><span class="sp"><input type="button" value="C" onclick="document.calculator.ans.value='0'" class="btn btn-warning">
+                </span></td></tr><tr></tr>
+
+                <tr><td><span class="sp"><input type="button" value="4"  class="btn btn-primary" onclick="document.calculator.ans.value+='4'">
+                </span></td>
+
+                <td><span class="sp"><input type="button" value="5"  class="btn btn-primary" onclick="document.calculator.ans.value+='5'">
+                </span></td>
+
+               <td><span class="sp"><input type="button" value="6"  class="btn btn-primary" onclick="document.calculator.ans.value+='6'">
+                </span></td>
+
+                <td><span class="sp"><input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="btn btn-danger">
+                </span></td></tr><tr></tr>
+
+               <td ><span class="sp"><input type="button" value="1"  class="btn btn-primary" onclick="document.calculator.ans.value+='1'">
+                </span></td>
+
+                <td ><span class="sp"><input type="button" value="2"  class="btn btn-primary" onclick="document.calculator.ans.value+='2'">
+                </span></td>
+
+                <td><span class="sp"><input type="button" value="3"  class="btn btn-primary" onclick="document.calculator.ans.value+='3'">
+                </span></td>
+
+                <td><span class="sp"><input type="button" value="-" onclick="document.calculator.ans.value+='-'" class="btn btn-danger">
+                </span></td></tr><tr></tr>
+
+                <tr><td><span class="sp"><input type="button" value="0" onclick="document.calculator.ans.value+='0'" class="btn btn-primary">
+                </span></td>
+
+               <td ><span class="sp"><input type="button" value="*" onclick="document.calculator.ans.value+='*'" class="btn btn-danger">
+                </span></td>
+
+               <td><span class="sp"><input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="btn btn-danger">
+                </span></td>
+
+
+
+                <td ><span class="sp"><input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="btn btn-success">
+                </span></td></tr>
+
+
+
+
+
+
+
+        </table>
+    </form>
+    </div>
+
+    </div>
+    <footer>
+        <center>
+            &copy;Haripriya-->Javascript calculator
+        </center>
+            </footer>
+</body>
+
+</html>
